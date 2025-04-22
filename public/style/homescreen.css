@@ -274,6 +274,18 @@
 .main--content-container-header .cancel-btn .Polaris-Button{
     padding-inline: 20px;
 }
+.table-main-upper-container{
+    display: flex;
+    align-items: center;
+    gap:4px;
+    padding: 0 20px;
+}
+.action-tab{
+    position: relative;
+}
+.table-main-upper-container .action-tab button.Polaris-Button.Polaris-Button--disclosure {
+    border: 1px dotted #E3E3E3;
+}
 /* responsive start homescreen dashboard start */
 
 @media only screen and (min-width: 786px) {

@@ -25,12 +25,15 @@
         transform: translate(-50%, -50%);
         background-color: #FDFDFD;
         padding: 0px 22px 10.5px;
-        border-radius: 16px;
+        border-radius: 10px;
         box-shadow: 0 4px 15px #1A1A1A12;
         min-width: 365px;
         width: 100%;
         max-width: 275px;
         overflow: hidden;
+        box-shadow: 0px 1px 0px 0px #1A1A1A12;
+        box-shadow: 0px 1px 0px 0px #CCCCCC80 inset;
+        box-shadow: 0px -1px 0px 0px #0000002B inset,0px 1px 0px 0px #CCCCCC80 inset,-1px 0px 0px 0px #00000021 inset,1px 0px 0px 0px #00000021 inset;
     }
       h4,
       .h4 {

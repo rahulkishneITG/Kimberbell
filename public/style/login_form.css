@@ -54,7 +54,7 @@
     padding: 6px 0px 6px 10px;
     
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #8A8A8A;
     outline: none;
     font-family: var(--primary-font);
     font-weight: var(--text-input-weight);
@@ -109,7 +109,7 @@
       }
   
       .login-box button:hover {
-        background-color: var(--button-bg-hover);
+        /* background-color: var(--button-bg-hover); */
       }
   
       .center {

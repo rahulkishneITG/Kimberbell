@@ -1,0 +1,46 @@
+.right_sidebar_parent.grid_item {
+    height: 100vh;
+}
+.autoship_dashboard .left_sidebar_parent.grid_item li.Polaris-ResourceItem__ListItem.submenu-item {
+    padding-top: 0;
+}
+.autoship_dashboard li.Polaris-ResourceItem__ListItem.submenu-item span.Polaris-Avatar.Polaris-Avatar--sizeMd {
+    width: 11.5px;
+    height: 27.06px;
+    position: relative;
+    left: 5px;
+    top: -3px;
+    visibility: hidden;
+    opacity: 0;
+}
+.autoship_dashboard li.Polaris-ResourceItem__ListItem.submenu-item .Polaris-InlineStack.submenu-item-content {
+    padding-top: 12px;
+}
+.autoship_dashboard td.Polaris-IndexTable__TableCell {
+    width: 231px;
+    padding-block: 16px;
+}
+.autoship_dashboard table tr .Polaris-IndexTable__TableHeading:first-child ,.autoship_dashboard table tr td.Polaris-IndexTable__TableCell:first-child{
+    padding-left: 16px !important;
+}
+.autoship_dashboard table tr td.Polaris-IndexTable__TableCell .Polaris-Badge--toneSuccess {
+    background-color: #29845A;
+    color: #fff;
+}
+.autoship_dashboard table tr td.Polaris-IndexTable__TableCell .edit-export-btn-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.autoship_dashboard table tr td.Polaris-IndexTable__TableCell .edit-export-btn-group button.Polaris-Button {
+   text-decoration: underline; 
+}
+@media only screen and (max-width: 500px) {
+    .upper-right-sidebar-container .Polaris-FullscreenBar.transparent_bg.header-container {
+        padding-right: 24px;
+    }
+    .autoship_dashboard .Polaris-LegacyCard,.autoship_dashboard .Polaris-LegacyCard:before {
+        box-shadow: var(--p-shadow-bevel-100);
+        border-radius: var(--p-border-radius-300);
+    }
+}

@@ -1,0 +1,36 @@
+.header_title_container .Polaris-Text--root {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.right_sidebar_parent.grid_item {
+    height: 100vh;
+}
+.info_container.main-content-container {
+    padding-inline: 24px;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+.generate-coupon-card {
+    max-width: 532px;
+    width: 100%;
+}
+.form-fields {
+    margin-block: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card-heading-subheading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+@media screen and (max-width: 786px) {
+    .generate-coupon-card {
+        max-width: 95vw;
+        width: 100%;
+    }
+}

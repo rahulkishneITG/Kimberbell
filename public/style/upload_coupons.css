@@ -1,0 +1,42 @@
+.header_title_container .Polaris-Text--root {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.right_sidebar_parent.grid_item {
+    height: 100vh;
+}
+.info_container.main-content-container {
+    padding-inline: 24px;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+.image-file-drop-zone {
+    max-width: 456px;
+    width: 100%;
+    margin-block: 15px;
+}
+.heading-and-subheading-container p.Polaris-Text--root.Polaris-Text--medium.upload_coupons_heading {  
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+@media screen and (max-width: 990px) {
+    .heading-and-subheading-container p.Polaris-Text--root {
+        text-align: start;
+    }
+    .header_title_container .Polaris-Text--root {
+       justify-content: center;
+    }
+}
+@media screen and (max-width:786px){
+    .info_container.main-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading-and-subheading-container p.Polaris-Text--root {
+        text-align: center;
+    }
+}

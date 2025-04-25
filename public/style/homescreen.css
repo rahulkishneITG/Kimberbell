@@ -47,6 +47,7 @@
     max-width: 1152px;
     margin: 0 auto;
     padding-top: 24px;
+    margin-bottom: 12%;
 }
 
 .badges_conatiner .Polaris-Text--root {
@@ -56,8 +57,9 @@
 .left_sidebar_parent.grid_item {
 
     background: #FFFFFF;
-    height: 100vh;
+    height: 100%;
 }
+
 .left_sidebar_parent.grid_item  li.Polaris-ResourceItem__ListItem {
     padding: 12px 86px 12px 25px;
 }
@@ -230,6 +232,7 @@
 
 .right_sidebar_parent.grid_item {
     position: relative;
+    height: 100vh;
 }
 
 .right_footer_section .policies_link {
@@ -286,6 +289,7 @@
     max-height: 34px;
     padding-block: 2px;
     padding-inline: 8px;
+
 }
 .action-tab{
     position: relative;
@@ -298,6 +302,7 @@
 }
 .table-main-upper-container .action-tab button.Polaris-Button.Polaris-Button--disclosure {
     border: 1px dashed #E3E3E3;
+    white-space: nowrap;
 }
 .add-filter-btn  .Polaris-Filters__FiltersInner{
     padding-block: 0;
@@ -312,8 +317,9 @@
     justify-content: center;
     align-items: center;
     height: 1.8rem;
+    white-space: nowrap;
 }
-.Polaris-LegacyCard,.Polaris-LegacyCard::before {
+.homescreen_container.ddr-main-dashboard .Polaris-LegacyCard,.homescreen_container.ddr-main-dashboard .Polaris-LegacyCard::before {
     border-radius: 0;
     box-shadow: none;
 }
@@ -326,16 +332,56 @@
     gap: 2px;
 }
 .main-table-container tr td button.Polaris-Button {
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     padding: 0;
+    min-width: 14px;
+    min-height: 14px;
 }
 .main-table-container tr td button.Polaris-Button svg{
     width: 20px;
     height: 20px;
 }
+.main-table-container td.Polaris-IndexTable__TableCell.table-cell-other {
+    padding: 16px 6px;
+    max-width: 114px;
+    width: 105px;
+    white-space: normal;
+    text-align: left;
+    vertical-align: sub;
+}
+.main-table-container td.Polaris-IndexTable__TableCell.table-cell-id,.main-table-container td.Polaris-IndexTable__TableCell.Polaris-IndexTable__TableCell--first{
+    padding: 16px 6px;
+    vertical-align: top;
+}
+.main-table-container td.Polaris-IndexTable__TableCell.table-cell-id {
+    width: 44px;
+}
+.main-table-container td.Polaris-IndexTable__TableCell.table-cell-action {
+    width: 103px;
+}
+.main--content-container-header .Polaris-LegacyStack > .Polaris-LegacyStack__Item{
+    margin-left:10px;
+}
+.main-table-container td.Polaris-IndexTable__TableCell.Polaris-IndexTable__TableCell--first{
+    padding: 16px 6px 16px 9px;
+}
 /* responsive start homescreen dashboard start */
-
+@media screen and (min-width:2000px) {
+    .homescreen_grid {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:785px) and (max-width:1400px){
+    .info_container {
+        max-width: 65.79vw;
+    } 
+}
+@media only screen  and (min-width:501px) and  (max-width:1400px){
+    .main--content-container-header .Polaris-LegacyStack   .Polaris-LegacyStack__Item:last-child {
+        margin-top: 5px;
+    }
+}
 @media only screen and (min-width: 786px) {
 
     .sidebar-menu-button,
@@ -346,7 +392,18 @@
     aside.sidebar_container {
         position: relative;
     }
-
+    .info_container.main-content-container {
+        height: 85vh;
+        overflow-y: auto;
+        padding-bottom: 10%;
+    }
+    .info_container.main-content-container::-webkit-scrollbar,.Polaris-IndexTable__ScrollBar {
+        display: none;
+    }
+    .info_container.main-content-container,.Polaris-IndexTable__ScrollBar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -363,8 +420,17 @@
         
         padding: 20px 0;
     }
+    
 }
-
+@media screen and (max-width:990px){
+    .Polaris-FullscreenBar.transparent_bg.header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .upper-right-sidebar-container p.Polaris-Text--root{
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 786px) {
     .right_sidebar_parent.grid_item {
         position: static;
@@ -394,20 +460,31 @@
         max-width: fit-content;
         padding: 12px 12px 0 0;
     }
-
-
     .sidebar_container {
         position: fixed;
         top: 0;
-        z-index: 10;
+        z-index: 999;
         left: 0;
         transition: all 0.4s ease;
         width: 240px;
         height: 100vh;
         transition: all 0.4s ease;
     }
-
-
+    .info_container {
+        max-width: 90vw;
+        padding-bottom: 10%;
+    } 
+    .table-main-upper-container {
+        max-height: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-table-container td.Polaris-IndexTable__TableCell.Polaris-IndexTable__TableCell--first {
+        padding: 16px 6px 16px 11px;
+    }
+    .reset-btn .Polaris-Button .Polaris-Text--root{
+        margin-bottom: 2px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -415,5 +492,19 @@
         grid-template-columns: 1fr;
         margin-bottom: 20px;
     }
-    
+    .upper-right-sidebar-container .Polaris-FullscreenBar.transparent_bg.header-container {
+        padding-right: 0px;
+    }
+    .Polaris-FullscreenBar.transparent_bg.header-container {
+        height: 90px;
+    }
+    .main--content-container-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main--content-container-header .search-bar {
+        width: 58%;
+    }
 }
+

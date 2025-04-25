@@ -1,0 +1,135 @@
+.header_title_container .Polaris-Text--root {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.right_sidebar_parent.grid_item {
+    height: 100vh;
+}
+.create_new_autoship .left_sidebar_parent.grid_item li.Polaris-ResourceItem__ListItem.submenu-item {
+    padding-top: 0;
+}
+.create_new_autoship li.Polaris-ResourceItem__ListItem.submenu-item span.Polaris-Avatar.Polaris-Avatar--sizeMd {
+    width: 11.5px;
+    height: 27.06px;
+    position: relative;
+    left: 5px;
+    top: -3px;
+    visibility: hidden;
+    opacity: 0;
+}
+.create_new_autoship .main-upper-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.left-container{
+    width: 100%;
+    max-width: 405px;
+}
+.right-container{
+    width: 100%;
+    max-width: 731px;
+}
+.date-avatar {
+    position: absolute;
+    right: 2.5%;
+    top: 56%;
+    z-index: 99;
+    transform: translateY(-50%);
+}
+.Polaris-TextField.date-picker-autoship {
+    position: relative;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  visibility: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.create_new_autoship .Polaris-Box.Polaris-Box-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.create_new_autoship .left-container .Polaris-Labelled__LabelWrapper {
+    margin-bottom: 6px;
+}
+.create_new_autoship  .search-and-sorting-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.right-upper-bar {
+    position: relative;
+}
+.create_new_autoship  .search-and-sorting-container .Polaris-Connected {
+    width: 100%;
+    max-width: 599px;
+}
+.create_new_autoship  .search-and-sorting-container:after {
+    content: "";
+    position: absolute;
+    bottom:0%;
+    border: 0.5px solid #E3E3E3;
+    height: 1px;
+    width: 110%;
+    left: -5%;
+}
+.create_new_autoship  .right-lower-container {
+    padding-top: 20px;
+}
+.create_new_autoship  .product-card-container {
+    padding-top: 16px;
+}
+.create_new_autoship  .right-lower-container  .Polaris-InlineGrid.product-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+.create_new_autoship  .right-lower-container  .Polaris-InlineGrid.product-item-container .product-image-and-title-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.create_new_autoship  .right-lower-container  .Polaris-InlineGrid.product-item-container .product-image-and-title-container .Polaris-Avatar--sizeMd{
+    width: 40px;
+}
+.create_new_autoship  .right-lower-container  .Polaris-InlineGrid.product-item-container .product-image-and-title-container .Polaris-Avatar--sizeMd img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.create_new_autoship  .right-lower-container  .Polaris-InlineGrid.product-item-container button.Polaris-Button.Polaris-Button--pressable.Polaris-Button--variantPlain.Polaris-Button--sizeMedium.Polaris-Button--textAlignCenter {
+    padding-right: 24px;
+}
+.create_new_autoship  .selected-product-container-with-checkbox {
+    max-width: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (max-width:1200px){
+    .create_new_autoship .main-upper-container {
+        flex-wrap: wrap;
+    }
+    .right-container,.left-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .create_new_autoship .right_sidebar_parent .Polaris-InlineGrid {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:600px){
+    .create_new_autoship  .selected-product-container-with-checkbox {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .create_new_autoship   .Polaris-Button--textAlignCenter {
+        white-space: nowrap;
+    }
+}

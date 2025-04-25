@@ -14,3 +14,16 @@ document.querySelectorAll('.action-tab .Polaris-Button--pressable').forEach(butt
     }
   });
 });
+// checkbox checked functionality
+const theadCheckbox = document.querySelector('.ddr-main-dashboard .main-table-container .Polaris-IndexTable__TableHeading--first #\\:R9ckq6\\:');
+const tbodyCheckboxes = document.querySelectorAll('.ddr-main-dashboard .main-table-container tbody .Polaris-Checkbox__Input');
+
+theadCheckbox.addEventListener('change', function () {
+  const isChecked = this.checked;
+  tbodyCheckboxes.forEach(checkbox => {
+    checkbox.checked = isChecked;
+    
+    checkbox.dispatchEvent(new Event('change'));
+  });
+});
+
